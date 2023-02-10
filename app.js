@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function(){
             sec =  Math.floor((today - yourDate) / 1000) % 60;
 			totalMinus = ((day*24)*60) +(hrs*60) + min;
             rootTime.textContent = `${(hrs>9)?hrs:"0"+hrs}:${(min>9)?min:"0"+min}:${(sec>9)?sec:"0"+sec}`;
-			rootMinus.textContent = `${totalMinus} minus`;
+			rootMinus.textContent = `${totalMinus} PHÚT`;
 			console.warn(totalMinus);
       } olock();
       var timer = setInterval(function(){olock()}, 1000);
